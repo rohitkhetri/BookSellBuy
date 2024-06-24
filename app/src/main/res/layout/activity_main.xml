@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/lavender"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+
+        <ImageView
+            android:id="@+id/favimg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="28dp"
+            app:srcCompat="@drawable/favourite"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/searchimg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/search"
+            app:tint="@color/white" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/fragmentContainer"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:navGraph="@navigation/nav_graph"
+                app:defaultNavHost="true" />
+
+<!--            <FrameLayout-->
+<!--                android:id="@+id/fragment_container"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="150dp"-->
+<!--                android:layout_marginEnd="30dp"-->
+<!--                android:background="#DCC2C2" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/textView2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="220dp"-->
+<!--                android:layout_marginEnd="30dp"-->
+<!--                android:background="#DCC2C2" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/textView3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="300dp"-->
+<!--                android:layout_marginEnd="30dp"-->
+<!--                android:background="#DCC2C2" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="400dp"-->
+<!--                android:text="Button" />-->
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/lavender"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_menu" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

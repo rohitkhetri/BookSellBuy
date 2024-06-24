@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1027686839376",
+    "project_id": "booksellbuy-f0319",
+    "storage_bucket": "booksellbuy-f0319.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027686839376:android:492d5dc60d86f4870e8d55",
+        "android_client_info": {
+          "package_name": "com.example.booksellbuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa66bUvs2JiiReMxr_j2CKLSv4kzaM5sE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
