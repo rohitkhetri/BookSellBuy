@@ -7,32 +7,111 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.booksellbuy.Fragments.Home_Fragment"
+        android:name="com.example.booksellbuy.RecyclerView_Fragment.RecyclerView_Home"
         android:label="Home"
-        tools:layout="@layout/fragment_home_" />
+        tools:layout="@layout/fragment_recycler_view__home">
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.example.booksellbuy.Fragments.Category_Fragment"
         android:label="Category"
-        tools:layout="@layout/fragment_category_"/>
+        tools:layout="@layout/fragment_category_">
+        <action
+            android:id="@+id/action_categoryFragment_to_onetoten_fragment"
+            app:destination="@id/onetoten_fragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_graduation_Fragment"
+            app:destination="@id/graduation_Fragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_engineering_Fragment"
+            app:destination="@id/engineering_Fragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_elevenTwelve_Fragment"
+            app:destination="@id/elevenTwelve_Fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/addBookFragment"
         android:name="com.example.booksellbuy.Fragments.AddBooks_Fragment"
         android:label="Add Book"
-        tools:layout="@layout/fragment_add_books_"/>
+        tools:layout="@layout/fragment_add_books_" />
 
     <fragment
         android:id="@+id/myPostFragment"
         android:name="com.example.booksellbuy.Fragments.Post_Fragment"
         android:label="My Posts"
-        tools:layout="@layout/fragment_post_"/>
+        tools:layout="@layout/fragment_post_" />
 
     <fragment
         android:id="@+id/accountFragment"
-        android:name="com.example.booksellbuy.Fragments.Accounts_Fragment"
+        android:name="com.example.booksellbuy.Fragments.Account_Fragment"
         android:label="Account"
-        tools:layout="@layout/fragment_accounts_"/>
+        tools:layout="@layout/fragment_account_">
+        <action
+            android:id="@+id/action_accountFragment_to_signup_Fragment"
+            app:destination="@id/signup_Fragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_welcome_Fragment"
+            app:destination="@id/welcome_Fragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onetoten_fragment"
+        android:name="com.example.booksellbuy.Fragments.onetoten_fragment"
+        android:label="onetoten_fragment" >
+        <action
+            android:id="@+id/action_onetoten_fragment_to_recyclerView_OneStandard"
+            app:destination="@id/recyclerView_OneStandard" />
+        <action
+            android:id="@+id/action_onetoten_fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_onetoten_fragment_to_fragment_3rdStandard"
+            app:destination="@id/fragment_3rdStandard" />
+    </fragment>
+    <fragment
+        android:id="@+id/engineering_Fragment"
+        android:name="com.example.booksellbuy.Fragments.Engineering_Fragment"
+        android:label="Engineering_Fragment" />
+    <fragment
+        android:id="@+id/graduation_Fragment"
+        android:name="com.example.booksellbuy.Fragments.Graduation_Fragment"
+        android:label="Graduation_Fragment" />
+    <fragment
+        android:id="@+id/signup_Fragment"
+        android:name="com.example.booksellbuy.Fragments.Signup_Fragment"
+        android:label="Signup_Fragment" >
+        <action
+            android:id="@+id/action_signup_Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome_Fragment"
+        android:name="com.example.booksellbuy.Fragments.Welcome_Fragment"
+        android:label="Welcome_Fragment" >
+        <action
+            android:id="@+id/action_welcome_Fragment_to_signup_Fragment"
+            app:destination="@id/signup_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elevenTwelve_Fragment"
+        android:name="com.example.booksellbuy.Fragments.ElevenTwelve_Fragment"
+        android:label="ElevenTwelve_Fragment" />
+    <fragment
+        android:id="@+id/recyclerView_OneStandard"
+        android:name="com.example.booksellbuy.RecyclerView_Fragment.RecyclerView_OneStandard"
+        android:label="RecyclerView_OneStandard" />
+    <fragment
+        android:id="@+id/fragment_3rdStandard"
+        android:name="com.example.booksellbuy.RecyclerView_Fragment.Fragment_3rdStandard"
+        android:label="fragment_3rd_standard"
+        tools:layout="@layout/fragment_3rd_standard" />
 
 </navigation>

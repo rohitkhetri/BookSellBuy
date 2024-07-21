@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.booksellbuy.R
 import com.example.booksellbuy.databinding.FragmentCategoryBinding
-
 
 class Category_Fragment : Fragment() {
 
@@ -18,10 +18,31 @@ class Category_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding= FragmentCategoryBinding.inflate(layoutInflater)
+        binding = FragmentCategoryBinding.inflate(inflater, container, false)
 
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_category_, container, false)
+        binding.onetotencard.setOnClickListener{
+
+            findNavController().navigate(R.id.action_categoryFragment_to_onetoten_fragment)
+
+        }
+
+        binding.eleventwelvecard.setOnClickListener{
+
+            findNavController().navigate(R.id.action_categoryFragment_to_elevenTwelve_Fragment)
+        }
+
+        binding.graduationcard.setOnClickListener{
+
+            findNavController().navigate(R.id.action_categoryFragment_to_graduation_Fragment)
+        }
+
+        binding.engineeringcard.setOnClickListener{
+
+            findNavController().navigate(R.id.action_categoryFragment_to_engineering_Fragment)
+        }
+
+        return binding.root
+
     }
 }

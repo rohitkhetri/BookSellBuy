@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_marginTop="50dp"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select field"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:textSize="23dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:stateListAnimator="@drawable/button_click_animation"
+            android:text="11th Science" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:stateListAnimator="@drawable/button_click_animation"
+            android:text="11th Commerce" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:stateListAnimator="@drawable/button_click_animation"
+            android:text="11th Arts" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:stateListAnimator="@drawable/button_click_animation"
+            android:text="12th Science" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:stateListAnimator="@drawable/button_click_animation"
+            android:text="12th Commerce" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:stateListAnimator="@drawable/button_click_animation"
+            android:text="12th Arts" />
+
+    </LinearLayout>
+</ScrollView>

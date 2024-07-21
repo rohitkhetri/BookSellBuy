@@ -6,6 +6,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.booksellbuy.Fragments.Account_Fragment;
 import com.example.booksellbuy.R;
 
 public class Spash_Activity extends AppCompatActivity {

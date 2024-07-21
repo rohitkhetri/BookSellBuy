@@ -54,6 +54,8 @@ dependencies {
     implementation(libs.firebase.database.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.firebase.storage)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -65,6 +67,23 @@ dependencies {
     implementation ("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation ("androidx.navigation:navigation-ui-ktx:2.3.5")
     implementation ("androidx.appcompat:appcompat:1.3.1")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-storage")
+
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    // For control over item selection of both touch and mouse driven selection
+    implementation ("androidx.recyclerview:recyclerview-selection:1.1.0")
+
+    implementation ("com.github.bumptech.glide:glide:4.11.0")
+
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
+
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
+    //implementation ("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7")
+
+
 
     //implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

@@ -6,20 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.booksellbuy.R
-import com.example.booksellbuy.databinding.FragmentHomeBinding
+import com.example.booksellbuy.databinding.FragmentElevenTwelveBinding
 
-class Home_Fragment : Fragment() {
+class ElevenTwelve_Fragment : Fragment() {
 
-    private lateinit var binding : FragmentHomeBinding
-
+    private lateinit var binding: FragmentElevenTwelveBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        binding = FragmentHomeBinding.inflate(layoutInflater)
-
-        return inflater.inflate(R.layout.fragment_home_, container, false)
+        binding = FragmentElevenTwelveBinding.inflate(layoutInflater)
+        return binding.root
     }
 
 }

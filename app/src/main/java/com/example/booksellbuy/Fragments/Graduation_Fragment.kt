@@ -6,18 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.booksellbuy.R
-import com.example.booksellbuy.databinding.FragmentAccountsBinding
+import com.example.booksellbuy.databinding.FragmentEngineeringBinding
+import com.example.booksellbuy.databinding.FragmentGraduationBinding
 
-class Accounts_Fragment : Fragment() {
+class Graduation_Fragment : Fragment() {
+    private lateinit var binding : FragmentGraduationBinding
 
 
-    private  lateinit var binding: FragmentAccountsBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding=FragmentAccountsBinding.inflate(inflater ,container,false)
         // Inflate the layout for this fragment
+        binding= FragmentGraduationBinding.inflate(layoutInflater)
+
         return binding.root
+
     }
 }

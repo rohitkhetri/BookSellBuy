@@ -23,4 +23,9 @@
         android:icon="@drawable/apps"
         android:title="Account" />
 
+<!--    <item-->
+<!--        android:id="@+id/welcome_Fragment"-->
+<!--        android:icon="@drawable/apps"-->
+<!--        android:title="Account"/>-->
+
 </menu>
